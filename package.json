@@ -1,6 +1,6 @@
 {
   "name": "fast-xml-parser-seq",
-  "version": "2.6.0",
+  "version": "2.6.1",
   "description": "Fork from NaturalIntelligence/fast-xml-parser that simply adds a sequence (seq) property to parsed JS objects so order of elements from XML can be maintained in JSON objects.",
   "main": "./bin/parser.js",
   "scripts": {
