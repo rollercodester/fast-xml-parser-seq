@@ -137,7 +137,7 @@ function parseValue(val,conversion){
 var attrsRegx = new RegExp("(\\S+)\\s*=\\s*(['\"])(.*?)\\2","g");
 function buildAttributesArr(attrStr,ignore,prefix,ignoreNS,conversion){
     attrStr = attrStr || attrStr.trim();
-    
+
     if(!ignore && attrStr.length > 3){
 
         var matches = getAllMatches(attrStr,attrsRegx);
@@ -166,6 +166,7 @@ var convertToJson = function (node){
                 }
                 jObj[prop].push(obj);
             }else{
+                obj['seq'] = (index+1)
                 jObj[prop] = obj;
             }
         }
